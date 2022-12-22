@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bài tập JS</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: rgb(224, 222, 219);
+        font-family: "Poppins", sans-serif;
+      }
+      .wrapper {
+        padding: 50px;
+      }
+      .card {
+        width: 700px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card m-auto shadow">
+        <h5 class="card-header">Bài tập 1: Tính ngày tháng năm</h5>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col">
+                <label for="day">Ngày</label>
+                <input
+                  placeholder="Nhập ngày"
+                  type="number"
+                  class="form-control"
+                  id="day"
+                />
+              </div>
+              <div class="col">
+                <label for="month">Tháng</label>
+                <input
+                  placeholder="Nhập tháng"
+                  type="number"
+                  class="form-control"
+                  id="month"
+                />
+              </div>
+              <div class="col">
+                <label for="year">Năm</label>
+                <input
+                  placeholder="Nhập năm"
+                  type="number"
+                  class="form-control"
+                  id="year"
+                />
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary mt-3" id="submit_1">
+              Ngày hôm qua
+            </button>
+            <button type="button" class="btn btn-primary mt-3" id="submit_2">
+              Ngày Mai
+            </button>
+          </form>
+        </div>
+        <div class="card-footer">
+          <h6 id="message"></h6>
+        </div>
+      </div>
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 2: Tính ngày</h5>
+          <div class="card-body">
+            <form>
+              <div class="row">
+                <div class="col">
+                  <label for="numberMonth">Tháng</label>
+                  <input
+                    placeholder="Nhập tháng"
+                    type="number"
+                    class="form-control"
+                    id="numberMonth"
+                  />
+                </div>
+                <div class="col">
+                  <label for="numberYear">Năm</label>
+                  <input
+                    placeholder="Nhập năm"
+                    type="number"
+                    class="form-control"
+                    id="numberYear"
+                  />
+                </div>
+              </div>
+              <button type="button" class="btn btn-primary mt-3" id="submit_3">
+                Tính ngày
+              </button>
+            </form>
+          </div>
+          <div class="card-footer">
+            <h6 id="message_2"></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 3: Đọc số</h5>
+          <div class="card-body">
+            <form>
+              <label for="number">Số có 3 chữ số</label>
+              <input
+                placeholder="Nhập số"
+                type="number"
+                class="form-control w-50"
+                id="number"
+              />
+            </form>
+            <button class="btn btn-primary mt-3 px-4" id="submit_4">
+              Đọc số
+            </button>
+          </div>
+          <div class="card-footer">
+            <h6 id="message_3"></h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="card m-auto shadow">
+          <h5 class="card-header">Bài tập 4: Tìm sinh viên xa trường nhất</h5>
+          <form>
+            <div class="card-body">
+              <h5>Sinh viên 1</h5>
+              <div class="row">
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tên"
+                    type="text"
+                    class="form-control"
+                    id="name"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ x"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-x1"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ y"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-y1"
+                  />
+                </div>
+              </div>
+
+              <h5 class="mt-3">Sinh viên 2</h5>
+              <div class="row">
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tên"
+                    type="text"
+                    class="form-control"
+                    id="name2"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ x"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-x2"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ y"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-y2"
+                  />
+                </div>
+              </div>
+              <h5 class="mt-3">Sinh viên 3</h5>
+              <div class="row">
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tên"
+                    type="text"
+                    class="form-control"
+                    id="name3"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ x"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-x3"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ y"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-y3"
+                  />
+                </div>
+              </div>
+
+              <h5 class="mt-3">Trường học</h5>
+              <div class="row">
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ x"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-x4"
+                  />
+                </div>
+                <div class="col-4">
+                  <input
+                    placeholder="Nhập tọa độ y"
+                    type="number"
+                    class="form-control"
+                    id="coordinates-y4"
+                  />
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-primary w-25 mx-3 mb-4"
+              id="submit_5"
+            >
+              Tìm
+            </button>
+          </form>
+          <div class="card-footer">
+            <h6 id="message_4"></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/index.js"></script>
+  </body>
+</html>
